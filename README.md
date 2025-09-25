@@ -1,28 +1,26 @@
 # 📌 Clasificación de Correos SPAM/HAM con Árbol de Decisión (CART)
 
-Este proyecto corresponde a la **Actividad Semana 5** de la asignatura *Machine Learning*.  
-El objetivo es implementar un **sistema clasificador de correos electrónicos (SPAM/HAM)** utilizando un **Árbol de Decisión (CART)** con la librería **scikit-learn** y el dataset previamente construido.
+Este proyecto implementa un **sistema de clasificación de correos electrónicos (SPAM/HAM)** utilizando un **Árbol de Decisión CART** en Python con la librería **Scikit-learn**.  
+Forma parte de la **Actividad Semana 5** de la asignatura *Machine Learning* (Ingeniería de Sistemas, 8.º semestre).
 
 ---
 
-## 📂 Contenido del repositorio
+## 🚀 Descripción del Proyecto
 
-- `Arbol Cart.py` → Script principal con la implementación del modelo CART.  
-- `dataset_correos_1000_instancias.csv` → Dataset con 1000 correos (features + etiqueta HAM/SPAM).  
-- Carpeta `spam_results/` → Se genera automáticamente al ejecutar el programa. Contiene:
-  - `decision_tree_results.csv` → Resultados de 50 ejecuciones.  
-  - `decision_tree_metrics.png` → Gráfica de métricas (Accuracy, F1, Z-score).  
-  - `confusion_matrix_avg.png` → Matriz de confusión promedio.  
-  - `decision_tree_feature_importance_avg.png` → Importancia de características (promedio de 50 ejecuciones).  
-  - `decision_tree_structure.png` → Visualización del árbol CART.  
-  - `metrics_distribution.png` → Distribución (boxplot) de métricas.  
-  - `parameters_vs_metrics.png` → Relación entre parámetros y métricas.
+- Se usa el dataset construido en la **Actividad 1**, con 1000 instancias de correos electrónicos y 10 características seleccionadas.
+- El modelo clasifica los correos en **SPAM (1)** o **HAM (0)**.
+- Se realizan **50 ejecuciones** del modelo, variando la semilla aleatoria para la separación `train/test`.
+- Se calculan y grafican métricas de desempeño:
+  - ✅ Exactitud (Accuracy)  
+  - ✅ F1-Score  
+  - ✅ Z-Score  
+
+Además, se analizan:  
+- **Matriz de confusión promedio**  
+- **Importancia de características** en la clasificación  
+- **Distribución y relación de métricas**
 
 ---
 
-## ⚙️ Requisitos
+## 📂 Estructura del Proyecto
 
-Instalar las librerías necesarias:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
