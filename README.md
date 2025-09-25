@@ -1,26 +1,33 @@
-# 📌 Clasificación de Correos SPAM/HAM con Árbol de Decisión (CART)
+🌐 Clasificador SPAM/HAM con Árbol de Decisión (CART)
 
-Este proyecto implementa un **sistema de clasificación de correos electrónicos (SPAM/HAM)** utilizando un **Árbol de Decisión CART** en Python con la librería **Scikit-learn**.  
-Forma parte de la **Actividad Semana 5** de la asignatura *Machine Learning* (Ingeniería de Sistemas, 8.º semestre).
+Autores: Cesar Aguirre [y otro integrante si aplica]
+Curso: Machine Learning – Semana 5
 
----
 
-## 🚀 Descripción del Proyecto
 
-- Se usa el dataset construido en la **Actividad 1**, con 1000 instancias de correos electrónicos y 10 características seleccionadas.
-- El modelo clasifica los correos en **SPAM (1)** o **HAM (0)**.
-- Se realizan **50 ejecuciones** del modelo, variando la semilla aleatoria para la separación `train/test`.
-- Se calculan y grafican métricas de desempeño:
-  - ✅ Exactitud (Accuracy)  
-  - ✅ F1-Score  
-  - ✅ Z-Score  
 
-Además, se analizan:  
-- **Matriz de confusión promedio**  
-- **Importancia de características** en la clasificación  
-- **Distribución y relación de métricas**
+📌 Descripción del proyecto
 
----
+Este proyecto implementa un clasificador de correos electrónicos para distinguir entre SPAM y HAM utilizando un Árbol de Decisión (CART) con la librería scikit-learn.
 
-## 📂 Estructura del Proyecto
+El objetivo principal es:
+
+Entrenar un modelo que clasifique correos electrónicos correctamente.
+Evaluar su desempeño mediante Accuracy, F1 Score y Z-score.
+Repetir la ejecución 50 veces con diferentes particiones de entrenamiento y prueba para analizar estabilidad y robustez.
+Identificar las características más importantes que afectan la clasificación.ç
+
+🗂 Estructura del proyecto
+Arbol-Cart/
+│
+├─ decision_tree_spam_mejorado.py       # Código principal
+├─ spam_results/                        # Carpeta con resultados y gráficos
+│   ├─ decision_tree_metrics.png
+│   ├─ confusion_matrix_avg.png
+│   ├─ decision_tree_feature_importance_avg.png
+│   ├─ decision_tree_structure.png
+│   ├─ metrics_distribution.png
+│   └─ decision_tree_results.csv
+├─ README.md                            # Este archivo
+└─ dataset_correos_1000_instancias.csv  # Dataset de correos
 
